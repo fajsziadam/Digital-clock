@@ -86,3 +86,51 @@ body{
 #backButton button:hover {
     color: black;
 }
+
+
+/* Reszponzív stílus telefonokhoz */
+@media (max-width: 768px) {
+    #myH1 {
+        font-size: 2.5rem;
+    }
+
+    #container {
+        width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    #display {
+        font-size: 3rem;
+    }
+
+    #controls button {
+        font-size: 1rem;
+        padding: 8px 15px;
+        min-width: 100px;
+    }
+
+    #backButton button {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #myH1 {
+        font-size: 2rem;
+    }
+
+    #display {
+        font-size: 2.5rem;
+    }
+
+    #controls button {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+        min-width: 80px;
+    }
+
+    #backButton button {
+        font-size: 1.5rem;
+    }
+}
