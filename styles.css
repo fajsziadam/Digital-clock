@@ -46,14 +46,26 @@ body{
     color: rgb(50, 167, 50);
   }
 
-/* Reszponzív stílus telefonokhoz */
+/* Reszponzív stílus kisebb képernyőkhöz */
 @media (max-width: 768px) {
-  body {
-      background-size: contain;
+  #clock {
+      font-size: 4rem; 
+      width: 90%;
+    }
+
+  #stopWatch {
+      font-size: 3.5rem; 
   }
 
+  #clock-container {
+      height: auto;
+      padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
   #clock {
-      font-size: 3rem;
+      font-size: 2.5rem;
   }
 
   #stopWatch {
@@ -61,7 +73,6 @@ body{
   }
 
   #clock-container {
-      height: auto;
-      padding: 20px;
+      padding: 10px;
   }
 }
